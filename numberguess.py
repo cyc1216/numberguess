@@ -3,7 +3,9 @@
 # 猜對的話印出 "你猜對了"
 # 猜錯的話,告訴使用者 比答案大/小
 import random
-r = random.randint(1, 100)
+start = int(input('請決定隨機整數最小值:'))
+end = int(input('請決定隨機整數最大值:'))
+r = random.randint(start, end)
 count = 0
 while True:
 	count += 1 #count = count + 1 的快寫
